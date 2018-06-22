@@ -1,0 +1,286 @@
+
+/*
+
+COMMON CONTENT
+
+ - HERO-LOGO: http://rivercoin.net/common-content/hero-logo.png
+
+
+COLORS
+
+ - #4dabdc || DARK
+ - #a1daf2 || LIGHT
+  
+ - #1b87c2 || BUTTON LIGHT
+ - #025e81 || BUTTON DARK
+
+*/
+
+/* CSS */
+
+/* GLOBAL */
+
+* {
+	margin: 0;
+	padding: 0;
+	/* font-family: 'Roboto'; */
+	font-family: 'Rubik';
+	font-weight: bold;
+}
+
+h1 {
+	font-family: 'Rubik';
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+	float: left;
+}
+
+/* SUB CSS */
+
+/* HEADER */
+
+.w-wrap {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto; 
+	display: block;
+}
+
+#footer-item{
+	text-decoration: none;
+	color: black;
+	/* padding-left: 50px; */
+}
+
+#footer-item:hover{
+	color: black;
+}
+
+header {
+	/* font-size: 1.12em; */
+	height: 100px;
+	width: 100%;
+	background: aliceblue;
+	/* position: fixed; */
+	
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
+}
+
+.navbar{
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: aliceblue;
+	/* color: aliceblue; */
+
+	font-size: 1.2em;
+	border: 0;
+}
+
+/* .navrnavbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+	background-color: aliceblue;
+	border: 0;
+} */
+
+.container-hero{
+	background-repeat: no-repeat;
+	margin-top: -35vw;
+	margin-left: 15vw;
+	width: 100vw;
+	height: 142vh;
+	overflow: hidden;
+	/* height: 950px; */
+	/* background-image: url(../common-content/hero_logo.png); */
+}
+
+.container-hero img{
+	background-repeat: no-repeat;
+	width: 85vw;
+	max-width: 1935px;
+	min-width: 800px;
+	overflow: hidden;
+	/* height: 950px; */
+	/* background-image: url(../common-content/hero_logo.png); */
+}
+
+@keyframes rocket_ship {
+	from {
+		margin-left: -1300px;
+	}
+    to {
+		margin-left: 13000px;
+	}
+}
+
+
+@keyframes rotation0 {
+	from {
+		transform: rotate(0);
+	}
+    to {
+		transform: rotate(500);
+	}
+}
+
+#rocket-ship{
+	margin-top: -50vh;
+	margin-left: -1500px;
+	z-index: 1;
+	transform: rotate(90deg);
+	width: 120px;
+	animation-name: rocket_ship;
+	animation-duration: 10s;
+}
+
+#moon{
+	margin-left: 50vw;
+	width: 12vw;
+	min-width: 120px;
+}
+
+#earth{
+	margin-left: -50vw;
+	min-width: 900px;
+	animation-name: rotation0;
+	animation-duration: 10s;
+}
+
+/* @media (min-width: 1100px) {
+	.container-hero{
+		background-repeat: no-repeat;
+		margin-top: -300px;
+		margin-left: 35vw;
+		width: 935px;
+		/* height: 950px; */
+		/* background-image: url(../common-content/hero_logo.png); */
+	/* }	
+} */
+
+#navbar-toggle{
+	background-color: #b3e3fc;
+	float: right;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 30px;
+	margin-left: 5px;
+	margin-right: 35px;
+	border-color: #9dcce6;
+}
+
+#menu_item {
+	color: black;
+}
+
+#menu_item:hover {
+	color: rgb(0, 20, 41);
+}
+
+#menu_item_active {
+	/* text-decoration: underline; */
+	color: black;
+}
+
+#menu_item_active:hover {
+	color: rgb(0, 20, 41);
+}
+
+@media (max-width: 767px) {
+	  	.navbar-nav>li {
+			float: right; /* Optionally align items to the right */
+			width: calc(100% - 30px); /* 100% - image width */
+			height: 50px;
+		  }
+
+		  .navbar-inverse .navbar-nav {
+			  height: 300px;
+		  }
+
+		#get {
+			background: linear-gradient(#1b87c2, #025e81);
+			color: white;
+			max-width: 70px;
+			margin-left: 20px;
+			/* width: 30px; */
+		
+			/* transition: all 1s; */
+	}
+}
+
+.navbar-inverse .navbar-nav a {
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 20px;
+	border-color: aliceblue;
+	color: aliceblue;
+	
+	transition: all 0.25s ease;
+}
+
+.navbar-inverse .navbar-nav a:hover {
+	margin-top: 27.5px;
+	
+	transition: all 0.25s ease;
+}
+
+@media (min-width: 767px) {
+
+
+#get {
+	background: linear-gradient(#1b87c2, #025e81);
+	color: aliceblue;
+	
+	/* transition: all 1s; */
+}
+
+}
+
+/* #get.hover {
+	background: linear-gradient(#025e81, #1b87c2);
+} */
+
+/* CONTENT */
+
+.hero {
+	background: #b3e3fc url("image-content/hero.png");
+	font-weight: medium;
+	padding-top: 15px;
+	height: 100%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+/* @media (max-width: 600px)
+{
+	.hero {
+		background: #b3e3fc url("image-content/hero_logo.png");
+		font-weight: medium;
+		padding-top: 15px;
+		height: 100%;
+		background-size: 1200px;
+		background-repeat: no-repeat;
+	}
+} */
+
+.inner-content {
+	font-weight: medium;
+	padding-top: 15px;
+	height: 1000px;
+	font-family: 'Roboto';
+	background: #b3e3fc/*#4dabdc*/;
+	background-size: 200px 200px;
+	background-image: url("image-content/hero_logo.png");
+}
