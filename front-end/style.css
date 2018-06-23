@@ -3,6 +3,7 @@
 	--main-color: #fff;
   	--blue-main-color: #025e81;
   	--blue-secondary-color: #1b87c2;
+  	--secondary-dark-color: #16232b;
   	--wrapper-width: 70%; /*The width of the content sections including menu*/
 }
 /**/
@@ -73,6 +74,85 @@ section.top{
 section.info{
 	
 }
+section.features{
+	overflow: hidden;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	color: #fff;
+	background-color: var(--secondary-dark-color);
+}
+section.features >  p {
+	font-weight: 900;
+	text-align: center; 
+	margin-bottom: 4rem;
+}
+section.features span{
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+section.features span.current{
+	text-decoration: underline;
+}
+section.features div{
+	display: block;
+}
+section.features div#browser, section.features div#mail{
+	display: none;
+}
+section.features > div > div{
+	width: 50%;
+	float: left;
+}
+section.features div p{
+	margin: 0;
+	padding: 0;
+}
+section.features div p.title{
+
+}
+section.features div p.undertitle{
+	text-transform: uppercase;
+	font-size: 2rem;
+	line-height: 1.8rem;
+	font-weight: 900;
+	margin-bottom: 3rem;
+}
+section.features div a.button{
+	display: inline-block;
+	border:0;
+	margin-top: 3rem;
+	padding: .5rem 1.5rem .5rem 1.5rem;
+	background-color: #fff;
+	border-radius: 2rem;
+	font-size: .8rem;
+	color: #000;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+
+section.team{
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	overflow: hidden;
+}
+section.team div{
+	width: 100%;
+}
+section.team div div{
+	width: 30%;
+	margin: calc(10% / 6);
+	float: left;
+}
+section.team div div p{
+	font-weight: 900;
+	padding:0;
+	margin:0;
+}
+section.team div div span{
+	text-transform: uppercase;
+	font-size: .8rem;
+}
 
 section.quote{
 	padding-top: 10rem;
@@ -118,7 +198,7 @@ section.threecoloumntext > div > div{
 	color: #000;
 }
 section.news{
-	background-color: #16232b;
+	background-color: var(--secondary-dark-color);
 	text-align: center;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
