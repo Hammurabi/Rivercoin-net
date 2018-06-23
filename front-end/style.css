@@ -209,6 +209,7 @@ section.features >  p {
 section.features span{
 	margin-left: 1rem;
 	margin-right: 1rem;
+	cursor: pointer;
 }
 section.features span.current{
 	text-decoration: underline;
