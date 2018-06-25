@@ -1,6 +1,9 @@
 * {
   font-family: "Rubik", sans-serif !important; }
 
+body {
+  color: black; }
+
 .t-center {
   text-align: center; }
 
@@ -81,7 +84,7 @@
   background: white;
   padding-top: 100px; }
 
-.home .section-2 h2, h3 {
+.home .section-2 h2, .home .section-2 h3, .home .section-3 h2, .home .section-3 h3 {
   font-weight: 900; }
 
 .home .section-2 .heading {
@@ -93,13 +96,39 @@
     .home .section-2 h3 {
       margin-top: 50px; } }
 
-.home .section-2 p {
+.home .section-2 p, .home .section-3 p {
   font-weight: 900; }
 
 .home .section-2 .row {
   margin-bottom: 100px; }
 
-.home .section-2 img {
-  max-width: 300px; }
+@media only screen and (min-width: 992px) {
+  .home .section-2 img {
+    max-width: 300px; } }
+.home .section-3 {
+  background: #f6f6f6;
+  padding-top: 75px;
+  padding-bottom: 75px; }
+
+.home .section-3 .heading {
+  margin-bottom: 50px; }
+
+.home .section-3 hr {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.home .section-3 img {
+  max-width: 50px; }
+
+.home .section-3 h3 {
+  margin-top: 10px;
+  margin-bottom: 30px; }
+
+.home .section-4 {
+  background: #16232b;
+  color: white; }
+
+.home .section-4 img {
+  max-width: 50%; }
 
 /*# sourceMappingURL=rivercoin.css.map */
