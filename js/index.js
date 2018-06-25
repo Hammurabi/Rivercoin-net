@@ -1,4 +1,0 @@
-
-// JAVASCRIPT
-
-console.log('Ready!');
