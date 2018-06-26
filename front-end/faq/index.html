@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../../common-content/master.css">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<header class="wrapper noselect">
+	<nav>
+		<img src="../../common-content/image-content/logofull.png">
+		<div class="hamburgermenu" onclick="hamburgerMenu()">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<ul id="menu">
+			<li>Why</li>
+			<li>How it works</li>
+			<li>Our Visions</li>
+			<li class="calltoaction">Get it!</li>
+		</ul>
+	</nav>
+</header>
+<section class="wrapper topsection faqtop">
+	<h1>FAQ</h1>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation. </div>
+</section>
+<section class="wrapper faqquestions">
+	<div>
+		<div class="header btn noselect" id="one">
+			<h2>What are RiverCoins?</h2>
+			<p class="symbol">&#x2b;</p>
+		</div>
+		<div class="answer" id="answerone">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+	<div>
+		<div class="header btn noselect" id="two">
+			<h2>How much is a Coin worth?</h2>
+			<p class="symbol">&#x2b;</p>
+		</div>
+		<div class="answer" id="answertwo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+	<div>
+		<div class="header btn noselect" id="three">
+			<h2>What do I get?</h2>
+			<p class="symbol">&#x2b;</p>
+		</div>
+		<div class="answer" id="answerthree">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+	<div>
+		<div class="header btn noselect" id="four">
+			<h2>What products are there?</h2>
+			<p class="symbol">&#x2b;</p>
+		</div>
+		<div class="answer" id="answerfour">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+	<div>
+		<div class="header btn noselect" id="five">
+			<h2>How can I buy a RiverCoin?</h2>
+			<p class="symbol">&#x2b;</p>
+		</div>
+		<div class="answer" id="answerfive">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+	<div>
+		<div class="header btn noselect" id="six">
+			<h2>What do I need to mine RiverCoins?</h2>
+			<p class="symbol">&#x2b;</p>
+		</div>
+		<div class="answer" id="answersix">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+</section>
+<footer class="wrapper">
+	Legal&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;About us&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Newsletter
+</footer>
+
+<script type="text/javascript">
+$('.btn').on('click',function(){
+      window[this.id]();  //here I want to run function
+        
+});
+one = function(){
+	var x = document.getElementById("answerone");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        $("#one .symbol").html("&#x2b;");
+    } else {
+        x.style.display = "block";
+        $("#one .symbol").html("&#x2212;");
+    }
+}
+two = function(){
+	var x = document.getElementById("answertwo");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        $("#two .symbol").html("&#x2b;");
+    } else {
+        x.style.display = "block";
+        $("#two .symbol").html("&#x2212;");
+    }
+}
+three = function(){
+	var x = document.getElementById("answerthree");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        $("#three .symbol").html("&#x2b;");
+    } else {
+        x.style.display = "block";
+        $("#three .symbol").html("&#x2212;");
+    }
+}
+four = function(){
+	var x = document.getElementById("answerfour");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        $("#four .symbol").html("&#x2b;");
+    } else {
+        x.style.display = "block";
+        $("#four .symbol").html("&#x2212;");
+    }
+}
+five = function(){
+	var x = document.getElementById("answerfive");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        $("#five .symbol").html("&#x2b;");
+    } else {
+        x.style.display = "block";
+        $("#five .symbol").html("&#x2212;");
+    }
+}
+six = function(){
+	var x = document.getElementById("answersix");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        $("#six .symbol").html("&#x2b;");
+    } else {
+        x.style.display = "block";
+        $("#six .symbol").html("&#x2212;");
+    }
+}
+</script>
+</body>
+</html>

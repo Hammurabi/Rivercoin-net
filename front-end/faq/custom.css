@@ -1,0 +1,39 @@
+section.faqtop{
+	padding-top: 8rem;
+	padding-bottom: 4rem;
+	background-color: #f0f0f0;
+}
+section.faqtop h1{
+	font-size: 5rem;
+}
+section.faqtop div{
+	width: 40%;
+}
+section.faqquestions{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+section.faqquestions div.header{
+	width: 100%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+section.faqquestions div.header h2{
+	display: inline;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+section.faqquestions div.header p.symbol{
+	display: inline;
+	padding: 0;
+	margin: 0;
+	float: right;
+	text-align: right;
+	font-size: 1.5rem;
+	font-weight: 900;
+	cursor: pointer;
+}
+section.faqquestions .answer{
+	display: none;
+}
