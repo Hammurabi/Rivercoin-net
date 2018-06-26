@@ -36,8 +36,32 @@
 	</div>
 </section>
 <section class="wrapper profile">
-	<h2>General Info</h2>Edit
-	<h2>My wallets</h2>Edit
+	<div>
+		<h2>General Info</h2>
+		<p><a href="#">Edit</a></p>
+	</div>
+	<table>
+		<tr>
+			<td>Username</td>
+			<td>MaxMunster</td>
+		</tr>
+		<tr>
+			<td>Email</td>
+			<td>mustermann@max.com</td>
+		</tr>
+		<tr>
+			<td>User ID</td>
+			<td>#3veU4ls9sD201kLmN</td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>●●●●●●●●●●</td>
+		</tr>
+	</table>
+	<div>
+		<h2>My wallets</h2>
+		<p><a href="#">Edit</a></p>
+	</div>
 	<table>
 		<tr>
 			<td>Name</td>
@@ -71,35 +95,50 @@
 	<table>
 		<tr>
 			<td><label>Lorem ipsum</td>
-			<td><input type="checkbox" name=""></label></td>
+			<td><input type="checkbox" name="one" id="one"><span id="onetext">Off</span></label></td>
 		</tr>
 		<tr>
 			<td><label>Dolor Sit Amet</td>
-			<td><input type="checkbox" name=""></label></td>
+			<td><input type="checkbox" name="two" id="two"></label><span id="twotext">Off</span></td>
 		</tr>
 		<tr>
 			<td><label>Conseductor</td>
-			<td><input type="checkbox" name="" id="myCheck" onclick="myFunction()"><span id="text">ON</span></label></td>
+			<td><input type="checkbox" name="three" id="three"><span id="threetext">Off</span></label></td>
 		</tr>
 	</table>
+	<input type="submit" class="calltoaction save" value="Save changes" name="">
 </section>
 <footer class="wrapper">
 	Legal&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Privacy Policy&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;About us&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Newsletter
 </footer>
 
 <script type="text/javascript">
-function myFunction() {
-  // Get the checkbox
-  var checkBox = document.getElementById("myCheck");
-  // Get the output text
-  var text = document.getElementById("text");
-
-  // If the checkbox is checked, display the output text
-  if (checkBox.checked == true){
-    $("#text").html("ON");
-  } else {
-    $("#text").html("OFF");
-  }
+$('input[type=checkbox]').on('click',function(){
+      window[this.id](); 
+});
+one = function(){
+	var val=$("input[name=one]:checked").length
+	if(val>0){
+		$("#onetext").html("On");
+	}else{//Nothing checked
+		$("#onetext").html("Off");
+	}  
+}
+two = function(){
+	var val=$("input[name=two]:checked").length
+	if(val>0){
+		$("#twotext").html("On");
+	}else{//Nothing checked
+		$("#twotext").html("Off");
+	}  
+}
+three = function(){
+	var val=$("input[name=three]:checked").length
+	if(val>0){
+		$("#threetext").html("On");
+	}else{//Nothing checked
+		$("#threetext").html("Off");
+	}  
 }
 </script>
 </body>

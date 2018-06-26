@@ -9,9 +9,27 @@ section.profiletop h1{
 section.profiletop div{
 	width: 40%;
 }
-section.profile h2{
+section.profile{
+	width: 50%;
+	margin-bottom: 4rem;
+}
+section.profile > div{
 	margin-top: 4rem;
 }
+section.profile > div > h2{
+	display: inline-block;
+}
+section.profile > div > p{
+	display: inline-block;
+	float: right;
+	line-height: 4rem;
+	padding: 0;
+	margin:0;
+}
+section.profile > div > p > a{
+	color: #000;
+}
+section.profile p
 section.profile table{
 	width: 100%;
     display: table;
@@ -20,11 +38,8 @@ section.profile table{
     font-size: 1rem;
     line-height: 2rem;
 }
-section.profile table tr{
-	width: auto;
-}
 section.profile table tr > td:first-child{
-	width: 20%;
+	width: 10rem;
 	font-weight: 900;
 }
 .line{
@@ -36,4 +51,9 @@ section.profile table tr > td:first-child{
 }
 td span.small{
 	font-size: 0.6rem;
+}
+.save{
+	margin-top: 3rem;
+	padding: .5rem 1.2rem .5rem 1.2rem;
+	border:0;
 }
