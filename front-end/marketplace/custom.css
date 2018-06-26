@@ -1,0 +1,39 @@
+section.marketplacetop{
+	padding-top: 8rem;
+	padding-bottom: 4rem;
+	background-color: #f0f0f0;
+}
+section.marketplacetop h1{
+	font-size: 5rem;
+}
+section.marketplacetop div{
+	width: 40%;
+}
+section.marketplace{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+section.marketplace table {
+	width: 100%;
+    display: table;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+section.marketplace th,section.marketplace td{
+	width: calc(100% / 4);
+	 padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+section.marketplace .green{
+	color: #5fad09;
+}
+section.marketplace .red{
+	color: #eb003a;
+}
+.marketplacebtn{
+	width: 30%;
+	margin: auto;
+	background-color: red;
+}

@@ -54,7 +54,7 @@ nav ul li {
 	padding:.4rem .8rem .4rem .8rem;
 	font-weight: 600;
 }
-nav ul li.calltoaction{
+.calltoaction{
 	border-radius: 50%;
 	background: linear-gradient(to top, #025e81 , #1b87c2);
     border-radius: 20px;
