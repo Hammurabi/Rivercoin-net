@@ -355,3 +355,24 @@ section.centeredtext p{
 	width: 70%;
 	margin: auto;
 }
+
+@media only screen and (max-width: 780px) {
+	section.top div div div p{
+		width: 100%;
+	}
+	section.info div div.text{
+		width: 100%;
+	}
+	section.info div div.image{
+		width: 100%;
+	}
+	section.team div div{
+		width: 100%;
+	}
+	section.threecoloumntext > div > div{
+		width: 100%;
+	}
+	section.news > div.newsgrid > div{
+		width: 100%;
+	}
+}

@@ -88,8 +88,13 @@ section.questions span{
 	font-weight: 900;
 	font-size: 2rem;
 }
-section.questions div{
+section.questions a{
 	float: right;
+	display: inline-block;
+	text-decoration: none;
+}
+
+section.questions div{
 	padding: .5rem 1.5rem .5rem 1.5rem;
 	background-color: #fff;
 	border-radius: 2rem;
@@ -156,5 +161,18 @@ footer{
   		transform: translate(-50%, -50%);
 		width: calc(50% - 3rem);
 		height: auto;
+	}
+	section.questions{
+    	text-align: center;
+    }
+    section.questions a{
+    	float: none;
+    	display: block;
+		margin: auto;
+		width: 20%;
+		margin-top: 1rem;
+    }
+    section.questions div{
+    	width: 100%;
 	}
 }
