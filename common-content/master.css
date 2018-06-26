@@ -2,7 +2,7 @@
 body{
 	padding: 0;
 	margin: 0;
-	font-family: "Rubik",Helvetica,Arial,sans-serif; /*Defining the font*/
+	font-family: "Rubik",sans-serif; /*Defining the font*/
 	background-color: #fff;
 }
 .maincolor{
@@ -76,7 +76,9 @@ nav .hamburgermenu div{
 	background-color: #000;
 }
 
-
+section.topsection{
+	padding-top: 4rem;
+}
 section.questions{
 	padding-top: 5rem;
 	padding-bottom: 5rem;
