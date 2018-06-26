@@ -1,0 +1,82 @@
+section.news{
+	padding-top: 7rem;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 8rem;
+}
+section.news h1{
+	font-size: 4.5rem;
+	font-weight: 700;
+	text-align: center;
+}
+section.news > p{
+	width: 50%;
+	margin: auto;
+}
+section.news > div{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 1rem;
+  	grid-row-gap: 1rem;
+	grid-template-areas: 
+    "one two three"
+    "four five six"
+    "seven eight nine";
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+section.news > div > div{
+	text-align: left;
+}
+section.news > div > div:nth-child(1){
+	grid-area: "one";
+}
+section.news > div > div:nth-child(2){
+	grid-area: "two";
+}
+section.news > div > div:nth-child(3){
+	grid-area: "three";
+}
+section.news > div > div:nth-child(4){
+	grid-area: "four";
+}
+section.news > div > div:nth-child(5){
+	grid-area: "five";
+}
+section.news > div > div:nth-child(6){
+	grid-area: "six";
+}
+section.news > div > div:nth-child(7){
+	grid-area: "seven";
+}
+section.news > div > div:nth-child(8){
+	grid-area: "eight";
+}
+section.news > div > div:nth-child(9){
+	grid-area: "nine";
+}
+section.news > div > div img{
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+}
+section.news > div > div p{
+	font-weight: 600;
+	padding: 0;
+	margin: 0;
+}
+section.news > div > div span{
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: .6rem;
+	padding-top: .2rem;
+}
+.newsload{
+	background: #fff;
+	color: #000;
+	padding:.6rem 1.4rem .6rem 1.4rem;
+	text-align: center;
+	line-height: 2rem;
+	margin:auto;
+}
