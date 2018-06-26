@@ -1,8 +1,102 @@
 section.exchange{
 	padding-top: 7rem;
+	min-height: calc(100vh - 7rem);
 	color: #fff;
+	text-align: center;
 }
 section.exchange h1{
-	font-size: 5rem;
+	font-size: 4.5rem;
+	font-weight: 700;
 	text-align: center;
+}
+section.exchange div.transactioninfo div{
+	width: 49%;
+	float: left;
+}
+section.exchange div.transactioninfo div:nth-of-type(odd){
+	text-align: right;
+	margin-right: 1%;
+	font-weight: 900;
+}
+section.exchange div.transactioninfo div:nth-of-type(even){
+	text-align: left;
+	margin-left: 1%;
+}
+section.exchange div.transactioninfo div p {
+	padding: 0;
+	margin:0;
+	line-height: 1.8rem;
+}
+.toogleswitch{
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	display: inline-block;
+	border-radius: 1.4rem;
+	border:1px solid #fff;
+	font-weight: 900;
+}
+.toogleswitch div{
+	float: left;
+	padding: .5rem 1.2rem .5rem 1.2rem;
+	margin: .2rem;
+}
+.toogleswitch div.current{
+	border-radius: 1rem;
+}
+.arrow{
+	width: 100%;
+	display: block;
+	font-size: 2rem;
+}
+div.input{
+	color: #000;
+	margin: auto;
+	width: 50%;
+	border-radius: .5rem;
+	background-color: red;
+}
+div.input .textarea[contenteditable=true]{
+	float: left;
+	cursor: text;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	padding-left: 1rem;
+	width: calc(85% - 1rem);
+	background-color: #fff;
+	text-align: left;
+	border-radius: .5rem 0 0 .5rem;
+}
+[contenteditable=true]:empty:before{
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  color: rgba(0,0,0,.5);
+}
+div.input .textarea:focus{
+    outline: none;
+}
+div.input .choosecurrency{
+	float: left;
+	padding: 0;
+	width: calc(15% - 1rem);
+	background-color: #fff;
+	border-radius: 0 .5rem .5rem 0;
+}
+div.input .choosecurrency div{
+	width: 100%;
+	float: left;
+	background-color: #999;
+	padding: .5rem;
+	border-radius: .5rem;
+}
+input[type=submit]{
+	display: block;
+	margin: auto;
+	border:0;
+	margin-top: 3rem;
+	padding: .5rem 1.5rem .5rem 1.5rem;
+	background-color: #1b87c2;
+	border-radius: 2rem;
+	font-size: .8rem;
+	color: #fff;
+	font-weight: 600;
 }

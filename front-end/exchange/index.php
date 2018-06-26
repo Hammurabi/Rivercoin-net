@@ -1,3 +1,8 @@
+<?php
+$cur1 = "RVC";
+$cur2 = "EUR";
+$buy = "Buy ".$cur1." with ".$cur2;
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,15 +33,56 @@
 </header>
 <section class="wrapper topsection secondary-dark exchange">
 <h1>Exchange</h1>
-<?php
-echo "Currency 1:";
-echo "Currency 2:";
-echo "Current Fee:";
-echo "Next Fee:";
-
-
-?>
-hej<br>fdihej<br>fdihej<br>fdihej<br>fdihej<br>fdihej<br>fdis
+<div class="transactioninfo">
+	<div>
+		<?php
+		echo "<p>".$cur1.":</p>";
+		?>
+	</div>
+	<div>
+		<p>Data missing</p>
+	</div>
+	<div>
+		<?php echo "<p>".$cur2.":</p>";?>		
+	</div>
+	<div>
+		<p>Data missing</p>
+	</div>
+	<div>
+		<?php echo "<p>Current Fee:</p>";?>		
+	</div>
+	<div>
+		<p>Data missing</p>
+	</div>
+	<div>
+		<?php echo "<p>Next Fee:</p>";?>		
+	</div>
+	<div>
+		<p>Data missing</p>
+	</div>
+</div>
+<div class="toogleswitch">
+	<div class="current blue-secondary">Buy</div>
+	<div>Sell</div>
+</div>
+<div class="input">
+	<div class="textarea" placeholder="Choose amount" contenteditable="true"></div>
+	<div class="choosecurrency">
+		<div>
+			<?php echo $cur1;?>
+		</div>
+	</div>
+</div>
+<div class="arrow">&#x2193;</div>
+<div class="input">
+	<div class="textarea" placeholder="Fixed price" contenteditable="true"></div>
+	<div class="choosecurrency">
+		<div>
+			<?php echo $cur2;?>
+		</div>
+	</div>
+</div>
+<input type="submit" name="" value="<?php echo $buy;?>">
 </section>
 </body>
 </html>
