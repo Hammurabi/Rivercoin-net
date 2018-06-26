@@ -6,12 +6,18 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="../../common-content/master.css">
 	<link rel="stylesheet" type="text/css" href="custom.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-<header class="wrapper">
+<header class="wrapper noselect">
 	<nav>
 		<img src="../../common-content/image-content/logofull.png">
-		<ul>
+		<div class="hamburgermenu" onclick="hamburgerMenu()">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<ul id="menu">
 			<li>Why</li>
 			<li>How it works</li>
 			<li>Our Visions</li>
@@ -265,6 +271,23 @@
 
 <!--A bit of JavaScript for the Features section. Made in plain JavaScript for now. Can be done easier, i know.-->
 <script>
+function hamburgerMenu() {
+    var x = document.getElementById("menu");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+window.onresize = function(event) {
+    var screensize = $(window).width();
+    if (screensize > 1280) {
+    	document.getElementById("menu").style.display = "block";
+    }
+    else{
+    	document.getElementById("menu").style.display = "none";
+    }
+};
 function Wallet() {
     document.getElementById("wallet").style.display = "block";
     document.getElementById("browser").style.display = "none";
