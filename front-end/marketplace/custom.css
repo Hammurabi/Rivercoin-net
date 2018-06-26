@@ -17,7 +17,7 @@ section.marketplace table {
 	width: 100%;
     display: table;
     border-collapse: collapse;
-    text-align: center;
+    text-align: left;
     font-size: 1rem;
     line-height: 2rem;
 }
@@ -36,4 +36,5 @@ section.marketplace .red{
 	width: 30%;
 	margin: auto;
 	background-color: red;
+	text-align: center;
 }

@@ -1,0 +1,39 @@
+section.profiletop{
+	padding-top: 8rem;
+	padding-bottom: 4rem;
+	background-color: #f0f0f0;
+}
+section.profiletop h1{
+	font-size: 5rem;
+}
+section.profiletop div{
+	width: 40%;
+}
+section.profile h2{
+	margin-top: 4rem;
+}
+section.profile table{
+	width: 100%;
+    display: table;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+section.profile table tr{
+	width: auto;
+}
+section.profile table tr > td:first-child{
+	width: 20%;
+	font-weight: 900;
+}
+.line{
+	height: 1px;
+	width: 100%;
+	background-color: #999;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+td span.small{
+	font-size: 0.6rem;
+}
