@@ -13,6 +13,7 @@ $buy = "Buy ".$cur1." with ".$cur2;
 	<link rel="stylesheet" type="text/css" href="../../common-content/master.css">
 	<link rel="stylesheet" type="text/css" href="custom.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../../js/master.js"></script>
 </head>
 <body>
 <header class="wrapper noselect">
