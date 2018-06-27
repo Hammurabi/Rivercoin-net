@@ -48,6 +48,15 @@ body {
   background: white;
   font-weight: bold; }
 
+.btn-light-blue {
+  background: linear-gradient(to bottom, #90d4f0, #44abe2);
+  color: white; }
+
+.btn-empty {
+  color: inherit;
+  background: transparent;
+  border: none; }
+
 .navbar .nav-item a {
   font-size: 20px; }
 
@@ -283,5 +292,49 @@ body {
 
 .home .footer, .home .footer a {
   color: black; }
+
+.exchange {
+  background: #16232b;
+  color: white; }
+
+.exchange h1 {
+  font-weight: 900;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 4em; }
+
+.exchange h4 {
+  font-size: 1.4em; }
+
+.exchange .switch-container {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+.exchange .switch-container .switch-border {
+  border: 1px solid white;
+  padding: 0.25em;
+  border-radius: 2em; }
+
+.exchange input {
+  padding: 0.7em;
+  border-top-left-radius: 0.4em;
+  border-bottom-left-radius: 0.4em;
+  border: none; }
+
+.exchange form span {
+  padding: 0.7em;
+  background: #dfdfdf;
+  color: grey;
+  font-weight: 900;
+  text-align: center;
+  border-top-right-radius: 0.4em;
+  border-bottom-right-radius: 0.4em; }
+
+.exchange form i {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+
+.exchange form button {
+  margin-top: 1.5em; }
 
 /*# sourceMappingURL=rivercoin.css.map */
