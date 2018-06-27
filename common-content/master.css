@@ -5,6 +5,16 @@ body{
 	font-family: "Rubik",sans-serif; /*Defining the font*/
 	background-color: #fff;
 }
+
+body img
+{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
 .maincolor{
 	background-color: #fff;
 }
