@@ -144,6 +144,19 @@ section.numberedlist div.line{
 	margin-bottom: 2rem;
 }
 
+
+section.threecoloumntext > div{
+	width: 100%;
+}
+section.threecoloumntext > div > div{
+	width: 30%;
+	margin: calc(10% / 6);
+	float: left;
+	text-align: left;
+	color: #000;
+}
+
+
 section.questions{
 	padding-top: 5rem;
 	padding-bottom: 5rem;

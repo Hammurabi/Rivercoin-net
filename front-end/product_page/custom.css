@@ -1,5 +1,39 @@
 section.topproductpage{
 	padding-top: 7rem;
+	color: #fff;
+	text-align: center;
+	padding-bottom: calc(25vh + 4rem);
+}
+section.topproductpage p{
+	width: 50%;
+	margin: auto;
+}
+section.topproductpage .download{
+	background: #fff;
+	color: #000;
+	padding: .5rem 1.5rem .5rem 1.5rem;
+	display: inline-block;
+	margin-top: 2rem;
+}
+section.threecoloumntext{
+	text-align: center;
+}
+section.threecoloumntext img{
+	margin-top: -27vh;
+	box-shadow: 0px 0px 2rem rgba(0,0,0,.5);
+	z-index: 10;
+}
+section.threecoloumntext h2{
+	margin-top: 5rem;
+	text-transform: uppercase;
+}
+section.test{
+	margin-top: calc(16vh + 4rem);
+	padding-top: 2rem;
+	background-color: #fafafa
+}
+section.test h2{
+	text-transform: uppercase;
 }
 section.getstarted{
 	padding-top: 4rem;

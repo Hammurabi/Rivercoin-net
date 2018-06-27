@@ -221,16 +221,6 @@ section.threecoloumntext{
 	margin-top: 5rem;
 	margin-bottom: 5rem;
 }
-section.threecoloumntext > div{
-	width: 100%;
-}
-section.threecoloumntext > div > div{
-	width: 30%;
-	margin: calc(10% / 6);
-	float: left;
-	text-align: left;
-	color: #000;
-}
 section.news{
 	background-color: #16232b;
 	text-align: center;
@@ -323,12 +313,6 @@ section.centeredtext p{
 
 @media only screen and (max-width: 780px) {
 	section.top div div div p{
-		width: 100%;
-	}
-	section.info div div.text{
-		width: 100%;
-	}
-	section.info div div.image{
 		width: 100%;
 	}
 	section.team div div{
