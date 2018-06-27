@@ -54,6 +54,12 @@ nav ul li {
 	padding:.4rem .8rem .4rem .8rem;
 	font-weight: 600;
 }
+
+nav ul li a {
+	text-decoration: none;
+    color: black;
+}
+
 .calltoaction{
 	border-radius: 50%;
 	background: linear-gradient(to top, #025e81 , #1b87c2);
@@ -62,6 +68,12 @@ nav ul li {
     color: aliceblue;
     transition: all 0.25s ease;
 }
+
+.calltoaction a{
+	text-decoration: none;
+    color: aliceblue;
+}
+
 nav .hamburgermenu{
 	display: none;
 	float: right;
