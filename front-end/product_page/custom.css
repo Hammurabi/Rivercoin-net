@@ -1,0 +1,20 @@
+section.topproductpage{
+	padding-top: 7rem;
+}
+section.getstarted{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+	text-align: center;
+}
+section.getstarted h2{
+	text-transform: uppercase;
+}
+section.getstarted p{
+	width: 50%;
+	margin: auto;
+}
+section.getstarted a{
+	display: inline-block;
+	padding: .5rem 1.5rem .5rem 1.5rem; 
+	margin-top: 2rem;
+}

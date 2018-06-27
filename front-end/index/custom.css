@@ -104,45 +104,6 @@ section.info div.btn a.morebtn {
 }
 
 
-section.numberedlist{
-	margin-top: 5rem;
-	margin-bottom: 5rem;
-}
-section.numberedlist h2{
-	text-align: center;
-}
-section.numberedlist div.number{
-	width: 100%;
-}
-section.numberedlist div.number div:first-child{
-	font-weight: 900;
-	font-size: 2rem;
-	line-height: 3rem;
-	height: 3rem;
-}
-section.numberedlist div.number div:first-child img{
-	display: inline-block;
-	float: left;
-	height: 3rem;
-}
-section.numberedlist div.number div:first-child p{
-	padding: 0;
-	margin:0;
-	display: inline-block;
-	margin-left: 1rem;
-}
-section.numberedlist div.number div:last-child{
-	width: calc(70% - 4rem);
-	margin-left: 4rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-}
-section.numberedlist div.line{
-	height: 1px;
-	background-color: #999;
-	margin-top: 2rem;
-	margin-bottom: 2rem;
-}
 section.features{
 	overflow: hidden;
 	padding-top: 3rem;
