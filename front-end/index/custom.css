@@ -19,7 +19,7 @@ section.top{
 	height: calc(100vh - 9rem);
 	padding-top: 9rem;
 	color: #fff;
-	background: linear-gradient(to right, #025e81 , #1b87c2);
+	background: linear-gradient(to bottom, #90d4f0, #44abe2);
 }
 section.top h1{
 	font-size: 3em;
@@ -194,7 +194,7 @@ section.quote{
 	color: #fff;
 	text-align: center;
 	position: relative;
-	background: linear-gradient(to right, #025e81 , #1b87c2);
+	background: linear-gradient(to bottom, #90d4f0, #44abe2);/**linear-gradient(to right, #025e81 , #1b87c2);**/
 }
 section.quote span.quotetag{
 	position: absolute;
@@ -271,7 +271,7 @@ section.news > a.button{
 section.createaccount{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-	background: linear-gradient(to right, #025e81 , #1b87c2);
+	background: linear-gradient(to bottom, #90d4f0, #44abe2)/**linear-gradient(to right, #025e81 , #1b87c2)**/;
 }
 section.createaccount h2{
 	color: #fff;
@@ -323,5 +323,33 @@ section.centeredtext p{
 	}
 	section.news > div.newsgrid > div{
 		width: 100%;
+	}
+}
+
+#img-md-3{
+	width: 550px;
+}
+
+@media only screen and (max-width: 1500px) {
+	#img-md-3{
+		width: 550px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+		#img-md-3{
+			width: 350px;
+		}
+}
+
+@media only screen and (max-width: 720px) {
+		#img-md-3{
+			width: 250px;
+		}
+}
+
+@media only screen and (max-width: 520px) {
+	#img-md-3{
+		width: 40vw;
 	}
 }

@@ -19,20 +19,19 @@ body img
 	background-color: #fff;
 }
 .blue-main{
-	background-color: #025e81;
+	background-color: #44abe2;
 }
 .blue-secondary{
-	background-color: #1b87c2;
+	background-color: #90d4f0;
 }
 .secondary-dark{
-	background-color: #16232b;
+	background-color: #44abe2;
 }
 .wrapper{
 	width:1250px;
 	padding-left: calc((100% - 1250px) / 2);
 	padding-right: calc((100% - 1250px) / 2);
 }
-
 
 /*Menu bar*/
 header{
@@ -70,39 +69,73 @@ nav ul li a {
     color: black;
 }
 
-.calltoaction{
-	border-radius: 50%;
-	background: linear-gradient(to top, #025e81 , #1b87c2);
-    border-radius: 20px;
-    border-color: aliceblue;
-    color: aliceblue;
-    transition: all 0.25s ease;
-}
-
 .calltoaction a{
 	text-decoration: none;
     color: aliceblue;
 }
 
-nav .hamburgermenu{
+.shadow{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadow-bot{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav .hamburgermenu input[type=checkbox]{
 	display: none;
-	float: right;
-	margin-top: calc(((4rem - 3rem) / 2) + .2rem);
 }
-nav .hamburgermenu div{
-	display: block;
-	width: 2rem;
-	height: calc(1rem / 3);
-	margin-top: calc(1rem / 3);
-	margin-bottom: calc(1rem / 3);
-	background-color: #000;
+
+nav .hamburgermenu .burger
+{
+	display: none;
 }
+
+nav .hamburgermenu .burger div{
+	transform-origin: 4px 0px;
+  
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+				opacity 0.55s ease;
+}
+
+nav .hamburgermenu .burger:hover {
+	cursor: pointer;
+}
+
+/* nav .hamburgermenu input[type=checkbox]:checked + .burger div{
+	opacity: 1;
+	transform: rotate(45deg) translate(-2px, -1px);
+} */
+
+nav .hamburgermenu input[type=checkbox]:checked + .burger div:nth-last-child(2)
+{
+  opacity: 0;
+  transform: rotate(90deg) scale(0.01, 0.01);
+}
+
+nav .hamburgermenu input[type=checkbox]:checked + .burger div:nth-last-child(3)
+{
+	opacity: 1;
+	transform: translate(5px, 1px) rotate(43deg) scale(1, 1);
+}
+
+nav .hamburgermenu input[type=checkbox]:checked + .burger div:nth-last-child(1)
+{
+	opacity: 1;
+	transform: translate(2px, 1px) rotate(-43deg) scale(1, 1);
+}
+
+/* nav .hamburgermenu .burger div:first-child{
+	transform-origin: 0% 0%;
+}
+
+nav .hamburgermenu .burger div:nth-last-child(2){
+	transform-origin: 0% 100%;
+} */
 
 section.topsection{
 	padding-top: 4rem;
 }
-
-
 
 section.numberedlist{
 	margin-top: 5rem;
@@ -156,11 +189,10 @@ section.threecoloumntext > div > div{
 	color: #000;
 }
 
-
 section.questions{
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	background: linear-gradient(to right, #025e81 , #1b87c2);
+	background: linear-gradient(to bottom, #90d4f0, #44abe2);
 	color: #fff;
 	line-height: 1.5rem;
 }
@@ -193,12 +225,27 @@ section.questions div{
                                   supported by Chrome and Opera */
 }
 
-
 /*Footer*/
 footer{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
+
+nav {
+	font-weight: bold !important;
+	font-size: 20px;
+}
+
+nav .hamburgermenu .menu li a:visited
+{
+	color: black;
+}
+
+nav .hamburgermenu .menu li a:hover
+{
+	color: rgb(85, 85, 85);
+}
+
 @media only screen and (max-width: 1300px) {
 	.wrapper{
     	padding-right: 5%;
@@ -207,30 +254,122 @@ footer{
     }
 }
 
+@media only screen and (min-width: 780px) {
+	nav .hamburgermenu .burger div{
+		display: none;
+		width: 2rem;
+		height: 0.12em;
+		margin-top: 0.25em;
+		margin-bottom: 0.25em;
+
+		border-radius: 30px;
+		background-color: #416579;
+	}
+}
+
+@media only screen and (min-width: 781px)
+{
+	.calltoaction{
+		border-radius: 50%;
+		background: #007BFF;/**linear-gradient(to top, #025e81 , #1b87c2);**/
+		border-radius: 20px;
+		border-color: aliceblue;
+		color: aliceblue;
+		transition: all 0.25s ease;
+
+		padding: 10px 30px;
+	}
+
+	.calltoaction:hover{
+		background: #0268DA;/**linear-gradient(to top, #025e81 , #1b87c2);**/
+	}
+}
+
 @media only screen and (max-width: 780px) {
+	nav .hamburgermenu .burger div{
+		display: block;
+		width: 2rem;
+		height: 0.125em;
+		margin-top: 0.275em;
+		margin-bottom: 0.275em;
+
+		border-radius: 30px;
+		background-color: #416579;
+	}
+
+	nav .hamburgermenu .burger
+	{
+		display: inline-block;
+		border: 1px solid rgb(172, 173, 177);
+		border-radius: 3px;
+		padding: 6px;
+
+		float: right;
+		margin-top: calc(((4rem - 3rem) / 2) + .2rem);
+	}
+
+	nav .hamburgermenu input[type=checkbox]:not(:checked) ~ .menu
+	{
+		display: inline-block;
+		background-color: white;
+		width: 100vw;
+		height: 220px;
+		float: right;
+
+		transform: scale(1, 1) translate(400%, 0px);
+
+		-webkit-transition: transform 0.2s;
+		transition: transform 0.2s;
+	}
+
+	nav .hamburgermenu input[type=checkbox]:checked ~ .menu
+	{
+		margin-top: 15px;
+		display: block;
+		background-color: white;
+		width: 100vw;
+		height: 220px;
+		float: right;
+		margin-right: -5vw;
+
+		transform: scale(1, 1) translate(0%, 0px);
+
+		-webkit-transition: transform 0.2s;
+		transition: transform 0.2s;
+	}
+
     nav .hamburgermenu{
     	display: block;
-    }
-    nav ul{
+	}
+	
+	nav .hamburgermenu .menu
+	{
+		display: none;
+	}
+
+    /* nav ul{
     	display: none;
     	width: 100%;
     	position: absolute;
     	top: 6.5rem;
     	left: 0;
     	background-color: #fff;
-    }
+	} */
     nav ul li{
     	width: 100%;
-    	text-align: center;
+    	text-align: left;
     	display: block;
     	margin-top: 1rem;
-    	margin-bottom: 1rem;
+		margin-bottom: 1rem;
     }
-    nav ul li.calltoaction{
-    	width: 20%;
+    nav ul a{
+		border-radius: 0%;
+		text-decoration: none;
+		color: black;
+    	/* width: 20%;
     	margin-left: 40%;
     	margin-right: 40%;
-    	margin-bottom: 0;
+    	margin-bottom: 0; */
     }
 }
 @media only screen and (max-width: 480px) {
@@ -254,4 +393,41 @@ footer{
     section.questions div{
     	width: 100%;
 	}
+}
+
+.col-md-5{
+	width: 500px;
+}
+
+@media only screen and (max-width: 550px)
+{
+	.col-md-5{
+		width: 50vw;
+	}
+}
+
+.col-md-7{
+	width: 700px;
+}
+
+@media only screen and (max-width: 750px)
+{
+	.col-md-7{
+		width: 70vw;
+	}
+}
+
+.col-md-8{
+	width: 800px;
+}
+
+@media only screen and (max-width: 850px)
+{
+	.col-md-8{
+		width: 80vw;
+	}
+}
+
+.shadow-text{
+	text-shadow: 1px 1px 0px black;
 }
