@@ -178,6 +178,9 @@ section.team div div{
 	margin: calc(10% / 6);
 	float: left;
 }
+section.team div div img{
+	width: 100%;
+}
 section.team div div p{
 	font-weight: 900;
 	padding:0;
