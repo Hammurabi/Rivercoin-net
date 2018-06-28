@@ -357,7 +357,7 @@ nav .hamburgermenu .menu li a:hover
 	} */
     nav ul li{
     	width: 100%;
-    	text-align: left;
+    	text-align: center;
     	display: block;
     	margin-top: 1rem;
 		margin-bottom: 1rem;
