@@ -16,6 +16,9 @@ body {
 .fl-left {
   float: let; }
 
+@media only screen and (min-width: 556px) {
+  .t-right-md {
+    text-align: right; } }
 @media only screen and (min-width: 992px) {
   .fl-right-lg {
     float: right; }
@@ -47,6 +50,11 @@ body {
   color: black;
   background: white;
   font-weight: bold; }
+
+.btn-primary {
+  color: white;
+  background: linear-gradient(to bottom, #1a85c0, #025e82);
+  border: none; }
 
 .btn-light-blue {
   background: linear-gradient(to bottom, #90d4f0, #44abe2);
@@ -397,5 +405,114 @@ body {
 
 .marketplace .section-2 b {
   font-weight: 900; }
+
+.profile .section-1 {
+  background: #efefef;
+  padding-bottom: 3em; }
+
+.profile .section-1 h1 {
+  font-weight: 900;
+  margin-top: 2em;
+  margin-bottom: 1em; }
+
+.profile .section-2 {
+  margin-top: 2em; }
+
+.profile .section-2 h3 {
+  width: 100%;
+  display: block;
+  font-weight: 900;
+  margin-bottom: 1em;
+  margin-top: 1em; }
+
+.profile .section-2 h3 span {
+  font-weight: 400;
+  font-size: 0.6em;
+  float: right;
+  text-decoration: underline;
+  margin-top: 0.4em; }
+
+.profile .profile-table td {
+  border: none;
+  vertical-align: middle; }
+
+.pp .section-1 {
+  background: #16232b;
+  padding-top: 2em;
+  color: white; }
+
+.pp .section-1 h2 {
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+.pp .img-overlay {
+  margin: 0px auto;
+  margin-top: 3em;
+  max-width: 600px;
+  max-height: 200px; }
+
+.pp .img-overlay img {
+  width: 100%;
+  box-shadow: 0px 0px 35px 0px black;
+  height: auto; }
+
+.pp .section-2 {
+  margin-top: 17em;
+  padding-bottom: 4em; }
+
+.pp .section-2 h2 {
+  margin-bottom: 1em;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+.pp .section-3 h2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  font-weight: 900; }
+
+.pp .section-3 {
+  background: #efefef;
+  padding-bottom: 4em; }
+
+.pp .section-3 hr {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.pp .section-3 img {
+  max-width: 50px; }
+
+.pp .section-3 h3 {
+  font-weight: 900;
+  margin-top: 5px;
+  margin-bottom: 30px; }
+
+.pp .section-4 {
+  padding-bottom: 4em; }
+
+.pp .section-4 h3 {
+  font-weight: 900;
+  margin-top: 2em;
+  margin-bottom: 1em; }
+
+.pp .section-4 button {
+  margin-top: 2em; }
+
+.pp .section-5 {
+  background: linear-gradient(to right, #44abe2, #90d4f0);
+  padding-bottom: 3em;
+  padding-top: 3em; }
+
+.pp .section-5 h3 {
+  font-weight: 900;
+  color: white; }
+
+.pp .footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: #f6f6f6; }
+
+.pp .footer, .pp .footer a {
+  color: black; }
 
 /*# sourceMappingURL=rivercoin.css.map */
