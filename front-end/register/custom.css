@@ -1,0 +1,44 @@
+section.register{
+	padding-top: 7rem;
+}
+section.register h2{
+	text-align: center;
+}
+section.register div.registerform{
+	width: 50%;
+	margin: auto;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+section.register form input[type=text], section.register form input[type=email], section.register form input[type=password], section.register form input[type=date]{
+	width: 100%;
+	border-radius: .4rem;
+	padding: .75rem .5rem .75rem .5rem;
+	border: 1px solid #007BFF;
+	font-size: 1rem;
+	transition: all .5s;
+	color: #000;
+	margin-top: 1rem;
+}
+
+
+
+.btns{
+	margin-top: 3rem;
+	display: inline-block;
+	width: calc(50% - 1rem);
+	text-align: center;
+	text-decoration: none;
+	background-color: #007BFF;
+	color: #fff;
+	padding: 1rem .4rem 1rem .4rem;
+	border-radius: .4rem;
+}
+p a{
+	color: #000;
+	text-decoration:none;
+}
+p a:hover{
+	text-decoration: underline;
+	color:#007BFF;
+}
