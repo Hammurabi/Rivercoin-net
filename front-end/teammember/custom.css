@@ -1,3 +1,23 @@
 section.teammembers{
 	padding-top: 7rem;
 }
+section.teammembers div{
+	width: 100%;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+section.teammembers div div{
+	width: 100%;
+	background-color: red;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+}
+section.teammembers div div img{
+	width: 100%;
+}
+section.teammembers div div p{
+	padding: 0;
+	margin: 0; 
+}
