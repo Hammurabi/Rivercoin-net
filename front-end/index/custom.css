@@ -318,8 +318,11 @@ section.centeredtext p{
 	section.top div div div p{
 		width: 100%;
 	}
-	section.team div div{
+	section.team div div, section.news > div.newsgrid > div{
 		width: 100%;
+		margin:0;
+		margin-top: 2%;
+		margin-bottom: 2%;
 	}
 	section.threecoloumntext > div > div{
 		width: 100%;
@@ -328,7 +331,6 @@ section.centeredtext p{
 		width: 100%;
 	}
 }
-
 #img-md-3{
 	width: 550px;
 }
