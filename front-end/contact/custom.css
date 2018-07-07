@@ -1,0 +1,12 @@
+section.contact{
+	padding-top: 7rem;
+}
+textarea{
+	width: 100%;
+	height: 5rem;
+	overflow-y: scroll;
+	resize: none;
+}
+input[type=submit]{
+	margin-top: 1rem;
+}
