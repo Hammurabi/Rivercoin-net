@@ -210,6 +210,9 @@ section.news > a.button{
 }
 
 /*Line section on index*/
+	.timelinewrapper > h2{
+		text-align: center;
+	}
 	.timelinegrid{
 		width: 100%;
 		font-weight: 700;
