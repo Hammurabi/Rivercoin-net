@@ -209,6 +209,198 @@ section.news > a.button{
 	text-decoration: none;
 }
 
+/*Line section on index*/
+	.timelinegrid{
+		width: 100%;
+		font-weight: 700;
+		display: grid;
+		grid-template-columns: calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5) calc(100% / 5);
+		grid-template-rows: 1fr 5rem 5rem 1fr 5rem 5rem;
+		grid-template-areas: 
+    "texttimelinefirst texttimelinefirst texttimelinefirst texttimelinefirst imagetimelinefirst"
+    "linetimelinefirst linetimelinefirst linetimelinefirst linetimelinefirst linetimelinefirst"
+    "linetimelinesecond . . . ."
+    "imagetimelinesecond texttimelinesecond texttimelinesecond texttimelinesecond texttimelinesecond"
+    "linetimelinethird linetimelinethird . . ."
+    "linetimelinefourth linetimelinefourth . . ."
+    ". imagetimelinefourth texttimelinefourth texttimelinefourth ."
+    ". imagetimelinefifth texttimelinefifth texttimelinefifth ."
+    ". imagetimelinesixth texttimelinesixth texttimelinesixth .";
+	}
+	.texttimelinefirst{
+		margin-bottom: -3rem;
+		width: calc(100% - (5rem * 2));
+		margin-left: 5rem;
+		grid-area: texttimelinefirst;
+	}
+	.imagetimelinefirst{
+		grid-area: imagetimelinefirst;
+		text-align: right;
+	}
+	.imagetimelinefirst img{
+		height: 10rem;
+	}
+	.linetimelinefirst{
+		border-right: 2px dashed #289AF2;
+		border-bottom: 2px dashed #289AF2;
+		grid-area: linetimelinefirst;
+		width: calc((100vw / 100 * 80) - 5rem - 5rem);
+		margin-left: 5rem;
+		margin-top: -1rem;
+	}
+	.linetimelinesecond{
+		border-left: 2px dashed #289AF2;
+		grid-area: linetimelinesecond;
+		margin-left: 5rem;
+	}
+	.imagetimelinesecond{
+		grid-area: imagetimelinesecond;
+	}
+	.imagetimelinesecond img{
+		max-height: 10rem;
+	}
+	.texttimelinesecond{
+		grid-area: texttimelinesecond;
+		width: calc(100% - 5rem);
+		margin-right: 5rem;
+	}
+	.linetimelinethird{
+		border-left: 2px dashed #289AF2;
+		border-bottom: 2px dashed #289AF2;
+		grid-area: linetimelinethird;
+		margin-left: 5rem;
+	}
+	.linetimelinefourth{
+		border-right: 2px dashed #289AF2;
+		grid-area: linetimelinefourth;
+	}
+	.imagetimelinefourth{
+		position: relative;
+		grid-area: imagetimelinefourth;
+		text-align: right;
+		border-right: 2px dashed #289AF2;
+		padding-right: 4rem;
+		margin-top: -3px;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.imagetimelinefourth div, .imagetimelinefifth div{
+		position: absolute;
+		top: calc(50% - 1px);
+		right: 0;
+		width: 3rem;
+		border-bottom: 2px dashed #289AF2;
+		transform: translateY(-50%);
+	}
+	.texttimelinefourth{
+		grid-area: texttimelinefourth;
+		padding-left: 2rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.imagetimelinefifth{
+		position: relative;
+		grid-area: imagetimelinefifth;
+		text-align: right;
+		border-right: 2px dashed #289AF2;
+		padding-right: 4rem;
+		margin-top: -3px;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.texttimelinefifth{
+		grid-area: texttimelinefifth;
+		padding-left: 2rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.imagetimelinesixth{
+		position: relative;
+		grid-area: imagetimelinesixth;
+		text-align: right;
+		
+		padding-right: 4rem;
+		margin-top: -3px;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.imagetimelinesixth div{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 3rem;
+		height: calc(100% / 2);
+		border-bottom: 2px dashed #289AF2;
+		border-right: 2px dashed #289AF2;
+	}
+	.texttimelinesixth{
+		grid-area: texttimelinesixth;
+		padding-left: 2rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	@media only screen and (max-width: 1080px) {
+    	.timelinegrid{
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr 1fr 5rem 5rem 1fr 1fr 5rem 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+			grid-template-areas: 
+	    "texttimelinefirst"
+	    "imagetimelinefirst"
+	    "linetimelinefirst"
+	    "linetimelinesecond"
+	    "texttimelinesecond"
+	    "imagetimelinesecond"
+	    "linetimelinethird"
+	    "linetimelinefourth"
+	    "imagetimelinefourth"
+	    "texttimelinefourth"
+	    "imagetimelinefifth"
+	    "texttimelinefifth"
+	    "imagetimelinesixth"
+	    "texttimelinesixth";
+		}
+		.texttimelinefirst{
+		margin-bottom: 0;
+		}
+		.imagetimelinefirst{
+			text-align: center;
+		}
+		.linetimelinefirst{
+			border-bottom: 0;
+			margin-left: 50%;
+			width: 0px;
+		}
+		.linetimelinesecond{
+			width: 0px;
+			margin-top: -3px;
+			margin-left: 50%;
+		}
+		.imagetimelinesecond{
+			text-align: center;
+		}
+		.linetimelinethird{
+			border-bottom: 0;
+			margin-left: 50%;
+			width: 40%;
+		}
+		.texttimelinefourth, .texttimelinefifth, .texttimelinesixth, .imagetimelinefourth, .imagetimelinefifth, .imagetimelinesixth{
+			text-align: center;
+			padding-left: 0;
+		}
+		.imagetimelinefourth div, .imagetimelinefifth div, .imagetimelinesixth div{
+			left: 0;
+			border-right: 0;
+			border-left: 2px dashed #289AF2;
+		}
+	}
+
+
+
+
+
+
+
+
 section.createaccount{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
@@ -251,6 +443,7 @@ section.centeredtext p{
 	width: 70%;
 	margin: auto;
 }
+
 
 @media only screen and (max-width: 780px) {
 	section.top div div div p{
