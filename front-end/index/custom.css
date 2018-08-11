@@ -1,11 +1,17 @@
 body{
 	padding: 0;
 	margin: 0;
-	font-family: "Roboto",Helvetica,Arial,sans-serif; /*Defining the font*/
+	font-family: "Rubik",Helvetica,Arial,sans-serif; /*Defining the font*/
 	background-color: #fff;
 }
 /*Content section*/
 
+section h2{
+	font-size: 2rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	padding-bottom: 2rem;
+}
 section.top{
 	width: 100%;
 	padding-left: 0;
@@ -13,24 +19,88 @@ section.top{
 	height: calc(100vh - 9rem);
 	padding-top: 9rem;
 	color: #fff;
-	background: url("../../common-content/image-content/Riverdam.png") no-repeat;
+	background: linear-gradient(to bottom, #90d4f0, #44abe2);
 }
-section.top div{
+section.top h1{
+	font-size: 3em;
+	max-width: 50%;
+}
+section.top > div{
+	width: 100%;
+	height: 100%;
+	background: url("../../common-content/image-content/hero_logo.png") no-repeat;
+	background-size: 70vh 80vh;
+	background-position:calc(100vw - 70vh) calc(100vh - 80vh);
+}
+section.top > div > div{
+	height: 100%;
+}
+section.top > div > div > div{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+section.top div div div p{
+	width: 40%;
 	position: absolute;
-	top: 15rem;
-	right: 10vw;
+    bottom: 15%;
+    left: 0;
+}
+section.info{
+	overflow: hidden;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+}
+section.info h2{
+	text-align: center;
+}
+section.info div{
+	width: 100%;
+	overflow: hidden;
+}
+section.info div h3{
+	font-size: 2rem;
+}
+section.info div div.text{
+	float: left;
+	width: 60%;
+}
+section.info div div.image{
+	float: left;
 	width: 40%;
 }
-section.top div h1{
-	font-size: 3rem;
-	padding: 0;
-	margin:0;
+section.info div.infocontainer:nth-child(2){
+	 margin-bottom: 4rem;
 }
-section.top div h2{
-	padding: 0;
-	margin:0;
-	padding-left: 2rem;
-	font-size: 1.7rem;
+section.info div.infocontainer:nth-child(2) div.text p{
+	width: 70%;
+}
+section.info div.infocontainer:nth-child(3) div.text{
+	text-align: right;
+}
+section.info div.infocontainer:nth-child(3) div.text p{
+	width: 70%;
+	float: right;
+}
+section.info div div img{
+	width: 100%;
+}
+section.info div.btn{
+	width: 100%;
+	text-align: center;
+}
+
+section.info div.btn a.morebtn {
+	display: inline-block;
+	border:0;
+	margin-top: 3rem;
+	padding: .5rem 1.5rem .5rem 1.5rem;
+	background: linear-gradient(to top, #025e81 , #1b87c2);
+	border-radius: 2rem;
+	font-size: .8rem;
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
 }
 
 
@@ -45,7 +115,6 @@ section.features >  p {
 	font-weight: 900;
 	text-align: center; 
 	margin-bottom: 4rem;
-	font-size: 1.4rem;
 }
 section.features span{
 	margin-left: 1rem;
@@ -68,7 +137,6 @@ section.features > div > div{
 section.features div p{
 	margin: 0;
 	padding: 0;
-	font-weight: 600;
 }
 section.features div p.undertitle{
 	text-transform: uppercase;
@@ -79,8 +147,6 @@ section.features div p.undertitle{
 }
 section.features div p.text{
 	width: 70%;
-	font-weight: 600;
-	font-size: 1.2rem;
 }
 section.features div a.button{
 	display: inline-block;
@@ -108,8 +174,8 @@ section.team div{
 	width: 100%;
 }
 section.team div div{
-	width: 20%;
-	margin: calc(20% / 8);
+	width: 30%;
+	margin: calc(10% / 6);
 	float: left;
 }
 section.team div div img{
@@ -145,13 +211,11 @@ section.quote div{
 	width: 70%;
 	margin: auto;
 	font-weight: 300;
-	font-size: 2rem;
 }
 section.quote p.author{
 	font-weight: 900;
-	font-size: 1.3rem;
+	font-size: .7rem;
 	margin-top: 2rem;
-	text-align: right;
 }
 
 section.threecoloumntext{
@@ -159,7 +223,6 @@ section.threecoloumntext{
 	overflow: hidden;
 	margin-top: 5rem;
 	margin-bottom: 5rem;
-	font-weight: 600;
 }
 section.news{
 	background-color: #16232b;
@@ -188,12 +251,11 @@ section.news > div.newsgrid > div p{
 	font-weight: 600;
 	padding: 0;
 	margin: 0;
-	font-size: 1.5rem;
-	margin-top: 1rem;
 }
 section.news > div.newsgrid > div span{
-	font-weight: 600;
-	font-size: 1.2rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: .6rem;
 	padding-top: .2rem;
 }
 section.news > a.button{
@@ -212,13 +274,13 @@ section.news > a.button{
 section.createaccount{
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-	background: linear-gradient(to bottom, #58C9EA, #00A2FE)/**linear-gradient(to right, #025e81 , #1b87c2)**/;
+	background: linear-gradient(to bottom, #90d4f0, #44abe2)/**linear-gradient(to right, #025e81 , #1b87c2)**/;
 }
 section.createaccount h2{
 	color: #fff;
 	text-align: center;
 }
-section.createaccount input[type=email],section.createaccount input[type=password]{
+section.createaccount input[type=text],section.createaccount input[type=email]{
 	border:0;
 	border-radius: .5rem;
 	font-size: 1rem;
@@ -244,8 +306,8 @@ section.createaccount input[type=submit]{
 
 section.centeredtext{
 	text-align: center;
-	padding-top: 2rem;
-	padding-bottom: 4rem;
+	padding-top: 10rem;
+	padding-bottom: 10rem;
 }
 section.centeredtext p{
 	width: 70%;

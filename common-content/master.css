@@ -35,20 +35,12 @@ body img
 
 /*Menu bar*/
 header{
+	position: fixed;
 	background-color: #fff;
 	height: 4rem;
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
 	z-index: 10;
-}
-.headerabs{
-	position: absolute;
-	left: 0;
-	top: 4rem;
-}
-.headerfixed{
-	position: fixed;
-	top: 0;
 }
 header img{
 	float: left;
@@ -64,7 +56,7 @@ nav ul{
 	list-style-type: none;
 	padding-top: .9rem;
 	padding-bottom: .9rem;
-	line-height: 1rem;
+	line-height: 1.4rem;
 }
 nav ul li {
 	display: inline-block;
@@ -76,9 +68,7 @@ nav ul li a {
 	text-decoration: none;
     color: black;
 }
-.calltoaction{
-	margin-left: 3rem;
-}
+
 .calltoaction a{
 	text-decoration: none;
     color: aliceblue;
@@ -156,7 +146,6 @@ section.numberedlist h2{
 }
 section.numberedlist div.number{
 	width: 100%;
-	margin-top: 10rem;
 }
 section.numberedlist div.number div:first-child{
 	font-weight: 900;
@@ -203,7 +192,7 @@ section.threecoloumntext > div > div{
 section.questions{
 	padding-top: 5rem;
 	padding-bottom: 5rem;
-	background: linear-gradient(to bottom, #00A2FE, #58C9EA);
+	background: linear-gradient(to bottom, #90d4f0, #44abe2);
 	color: #fff;
 	line-height: 1.5rem;
 }
@@ -221,7 +210,7 @@ section.questions div{
 	padding: .5rem 1.5rem .5rem 1.5rem;
 	background-color: #fff;
 	border-radius: 2rem;
-	font-size: 1rem;
+	font-size: .8rem;
 	color: #000;
 	font-weight: 600;
 }
